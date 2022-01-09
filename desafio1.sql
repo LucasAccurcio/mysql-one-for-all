@@ -3,7 +3,7 @@
 -- -----------------------------------------------------
 DROP DATABASE IF EXISTS SpotifyClone;
 CREATE DATABASE `SpotifyClone`;
-USE `SpotifyClone` ;
+-- USE `SpotifyClone` ;
 
 -- -----------------------------------------------------
 -- Table `SpotifyClone`.`planos_assinatura`
