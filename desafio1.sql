@@ -136,14 +136,14 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- INSERÇÃO DE VALORES
 -- -----------------------------------------------------
-INSERT INTO planos_assinatura (plano, valor_plano)
+INSERT INTO `SpotifyClone`.`planos_assinatura` (plano, valor_plano)
 VALUES
 	('gratuito', 0.00),
 	('universitário', 5.99),
 	('pessoal', 6.99),
 	('familiar', 7.99);
 
-INSERT INTO usuario (usuario, idade, idplano_assinatura, data_assinatura)
+INSERT INTO `SpotifyClone`.`usuario` (usuario, idade, idplano_assinatura, data_assinatura)
 VALUES
 	('Thati', 23, 1, '2019/10/20'),
 	('Cintia', 35, 4, '2017/12/30'),
@@ -156,7 +156,7 @@ VALUES
 	('Angelina', 42, 4, '2018/04/29'),
 	('Paul', 46, 4, '2017/01/17');
 
-INSERT INTO artista (artista)
+INSERT INTO `SpotifyClone`.`artista` (artista)
 VALUES
 	('Walter Phoenix'),
 	('Peter Strong'),
@@ -165,7 +165,7 @@ VALUES
 	('Tyler Isle'),
 	('Fog');
 
-INSERT INTO album (album, idartista)
+INSERT INTO `SpotifyClone`.`album` (album, idartista)
 VALUES
 	('Envious', 1),
 	('Exuberant', 1),
@@ -178,7 +178,7 @@ VALUES
 	('No guarantees', 5),
 	('Apparatus', 6);
 
-INSERT INTO cancoes (cancao, duracao, ano_lancamento, idartista, idalbum)
+INSERT INTO `SpotifyClone`.`cancoes` (cancao, duracao, ano_lancamento, idartista, idalbum)
 VALUES
 	("Soul For Us", 200, '1990/01/01', 1, 1),
 	("Reflections Of Magic", 163, '1990/01/01', 1, 1),
@@ -221,7 +221,7 @@ VALUES
 	("Baby", 136, '2015/01/01', 6, 10),
 	("You Make Me Feel So..", 83, '2015/01/01', 6, 10);
 
-INSERT INTO historico_reproducao (idusuario, idcancoes, data_reproducao)
+INSERT INTO `SpotifyClone`.`historico_reproducao` (idusuario, idcancoes, data_reproducao)
 VALUES
 	(1, 36, "2020-02-28 10:45:55"),
 	(1, 25, "2020-05-02 05:30:35"),
@@ -262,7 +262,7 @@ VALUES
 	(10, 12, "2017-07-27 05:24:49"),
 	(10, 13, "2017-12-25 01:03:57");
 
-INSERT INTO seguindo_artista (idusuario, idartista)
+INSERT INTO `SpotifyClone`.`seguindo_artista` (idusuario, idartista)
 VALUES
 	(1, 1),
 	(1, 4),
