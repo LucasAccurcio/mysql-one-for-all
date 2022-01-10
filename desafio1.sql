@@ -1,5 +1,7 @@
 DROP DATABASE IF EXISTS `SpotifyClone`;
 CREATE DATABASE `SpotifyClone`;
+USE `SpotifyClone`;
+
 
 CREATE TABLE `planos_assinatura` (
   `idplano_assinatura` INT NOT NULL AUTO_INCREMENT,
